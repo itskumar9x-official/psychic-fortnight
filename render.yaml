@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: psychic-fortnight
+    env: docker
+    plan: starter  # or free, but free tier may not handle 24/7 streaming
+    autoDeploy: true
+    envVars:
+      - key: YOUTUBE_KEY
+        sync: false  # set this in Render dashboard
