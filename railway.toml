@@ -1,0 +1,9 @@
+[project]
+name = "my-youtube-stream"
+
+[services.stream]
+name = "stream"
+dockerfilePath = "Dockerfile"
+
+[services.stream.env]
+YOUTUBE_KEY = ""
